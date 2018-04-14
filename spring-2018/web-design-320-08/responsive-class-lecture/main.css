@@ -1,0 +1,65 @@
+*{
+   box-sizing: inherit;
+}
+
+html{
+   box-sizing: border-box;
+}
+
+.box{
+   height: 200px;
+   background: red;
+}
+
+.box2{
+   height: 200px;
+   background: blue;
+}
+
+.box3{
+   height: 200px;
+   background: green;
+}
+
+.box4{
+   height: 200px;
+   background: purple;
+}
+
+@media (max-width: 639px) {
+   .box,.box2,.box3.box4{
+       width: 100%;
+   }
+}
+
+@media (min-width: 640px) and (max-width: 799px) {
+   .box, .box2, .box3, .box4 {
+       width: 75%;
+   }
+
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+   .box, .box2, .box3, .box4 {
+       width: 50%;
+       margin: 5px;
+   }
+
+}
+
+@media (min-width: 1000px) {
+   .box, .box2, .box3, .box4{
+       width: 20%;
+       margin: 10px;
+       float: left;
+   }
+
+}
+
+@media (min-width: 1440px) {
+   .box, .box2, .box3, .box4{
+       float: right;
+
+   }
+
+}

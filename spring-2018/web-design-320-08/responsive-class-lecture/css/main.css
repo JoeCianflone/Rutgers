@@ -1,0 +1,73 @@
+:root {
+   --iphone: 320px;
+}
+
+* {
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+body {
+   min-width: var(--iphone);
+}
+
+.masthead {
+   background-color: transparent;
+   background-image: url(../images/masthead.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 501px;
+}
+
+@media (max-width: 800px) {
+   .masthead {
+      background-position: 80% center;
+   }
+}
+
+@media (max-width: 480px) {
+   .masthead {
+      background-position: 60% center;
+      height: 300px;
+   }
+}
+
+
+.masthead .logo {
+   display: block;
+   text-align: center;
+   font-family: 'Pacifico';
+   color: #F45B69;
+   font-size: 47px;
+   text-decoration: none;
+}
+
+.masthead .logo:hover {
+   text-decoration: underline;
+}
+
+.masthead .masthead-text {
+   font-family: 'Open Sans';
+   font-size: 67px;
+   color: #fff;
+   padding: 10px 0 0 100px;
+   width: 50%;
+   border: 1px solid red;
+}
+
+@media (max-width: 900px) {
+   .masthead .masthead-text {
+      width: 80%;
+   }
+}
+
+@media (max-width: 800px) {
+   .masthead .masthead-text {
+      width: 100%;
+      text-align: center;
+   }
+}
